@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAula · Inicio</title>
+    <!-- FONT AWESOME 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- UNIÓN AL CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+        <!-- Cabecera estilo primera imagen -->
+        <div class="hero-header">
+            <div class="hero-title">EcoAula Virtual</div>
+            <div class="hero-sub">¡Bienvenido a EcoAula! Continúa tu aprendizaje ambiental y contribuye a un planeta más sostenible</div>
+            
+            <!-- CONTENEDOR DE BOTONES (nuevo) -->
+            <div class="button-container">
+                <button class="continue-btn"><i class="fas fa-play"></i>Continuar Aprendiendo</button>
+                <button class="explore-btn"><i class="fas fa-compass"></i>Explorar cursos</button>
+            </div>
+
+            <!-- Métricas en rectángulos con iconos -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Cursos en Progreso</span>
+                        <span class="stat-number">0</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Horas de Estudio</span>
+                        <span class="stat-number">0</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Certificados</span>
+                        <span class="stat-number">0</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Racha de Días</span>
+                        <span class="stat-number">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel lateral + contenido principal -->
+        <div class="dashboard-panel">
+            <!-- SIDEBAR (Panel de usuario) -->
+            <div class="sidebar">
+                <div class="user-profile">
+                    <div class="avatar-placeholder">E</div>
+                    <div class="user-info">
+                        <h4>Usuario Eco</h4>
+                        <p>usuario@ecoaula.com</p>
+                    </div>
+                </div>
+
+                <!-- Menú de navegación -->
+                <div class="nav-menu">
+                    <a href="indexinicio.html" class="nav-item active">
+                        <i class="fas fa-home"></i> Inicio
+                    </a>
+
+                    <a href="indexcursos.html" class="nav-item">
+                        <i class="fas fa-graduation-cap"></i> Mis Cursos
+                    </a>
+                    <div class="nav-item"><i class="fas fa-certificate"></i> Certificados</div>
+                    <div class="nav-item"><i class="fas fa-pencil-alt"></i> Exámenes</div>
+                    <div class="nav-item"><i class="fas fa-book-open"></i> Contenido</div>
+                </div>
+
+                <!-- Configuración y cerrar sesión -->
+                <div class="user-footer">
+                    <div class="footer-item"><i class="fas fa-cog"></i> Configuración</div>
+                    <div class="footer-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</div>
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.8rem; color: #408468;"><i class="fas fa-leaf"></i> usuario@ecoaula.com</div>
+            </div>
+
+            <!-- CONTENIDO PRINCIPAL (solo INICIO) -->
+            <div class="main-content">
+                <!-- PÁGINA INICIO -->
+                <div id="page-inicio" class="page active-page">
+                    <div class="ver-todos-row">
+                        <h2 class="content-title">Mis Cursos</h2>
+                        <span class="ver-todos-link">Ver Todos <i class="fas fa-arrow-right"></i></span>
+                    </div>
+
+                    <!-- Curso 1: Cambio Climático -->
+                    <div class="course-card">
+                        <h3>🌍 Cambio Climático y Sostenibilidad</h3>
+                        <div class="course-desc">Comprende el cambio climático y cómo combatirlo</div>
+                        <span class="badge-light">Comenzar curso</span>
+                    </div>
+
+                    <!-- Curso 2: Reciclaje -->
+                    <div class="course-card" style="margin-top: 0.5rem;">
+                        <h3>♻️ Reciclaje y Gestión de Residuos</h3>
+                        <div class="course-desc">Aprende las mejores prácticas para reciclar y reducir los desechos</div>
+                        <span class="badge-light">Comenzar curso</span>
+                    </div>
+
+                    <hr>
+                    <div style="display: flex; gap: 2rem; color: #1d654b; font-size: 0.9rem; margin-top: 0.8rem;">
+                        <span><i class="fas fa-leaf"></i> 0 certificados</span>
+                        <span><i class="fas fa-fire"></i> racha 0 días</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,448 @@
+/* ESTILOS GENERALES - reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* FONDO DE LA PÁGINA */
+body {
+    background: #d4e7dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+/* TARJETA PRINCIPAL */
+.app-card {
+    max-width: 1300px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2.5rem;
+    box-shadow: 0 20px 40px rgba(0, 60, 30, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABECERA VERDE CON GRADIENTE */
+.hero-header {
+    background: linear-gradient(105deg, #03b456 0%, #02af61db 100%);
+    padding: 2rem 2.5rem 1.8rem 2.5rem;
+    border-bottom: 2px solid #b8decb;
+}
+
+/* TÍTULO PRINCIPAL */
+.hero-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #e7f0ed;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+}
+
+/* SUBTÍTULO */
+.hero-sub {
+    font-size: 1.1rem;
+    color: #e3ede9;
+    margin-bottom: 1.8rem;
+    font-weight: 400;
+}
+
+/* CONTENEDOR PARA LOS BOTONES */
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+/* BOTONES DE FILTRO */
+.filter-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid #cfe8dc;
+    background-color: #f4fbf8;
+    color: #1b8c5e;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #dff3ea;
+}
+
+.filter-btn.active {
+    background-color: #1b8c5e;
+    color: white;
+    border-color: #1b8c5e;
+}
+
+/* BOTÓN "Continuar Aprendiendo" */
+.continue-btn {
+    background-color: #e1ebe7;
+    color: rgb(42, 125, 73);
+    border: none;
+    border-radius: 60px;
+    padding: 0.9rem 2.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 10px 16px -6px #7fcfb0;
+    cursor: default;
+    display: inline-block;
+    transition: none;
+    border: 1px solid #ecf1ef;
+}
+
+.continue-btn i {
+    margin-right: 8px;
+}
+
+/* NUEVO BOTÓN "Explorar cursos" */
+.explore-btn {
+    background-color: #e1ebe7;  
+    color: rgb(42, 125, 73);     
+    border: 1px solid #ecf1ef;   
+    border-radius: 60px;          
+    padding: 0.9rem 2.8rem;       
+    font-size: 1.2rem;            
+    font-weight: 600;            
+    box-shadow: 0 10px 16px -6px #7fcfb0;  
+    cursor: default;
+    display: inline-block;
+    transition: none;
+}
+
+.explore-btn i {
+    margin-right: 8px;
+}
+
+/* CONTENEDOR DE TARJETAS DE ESTADÍSTICAS */
+.stats-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* TARJETA INDIVIDUAL DE ESTADÍSTICA */
+.stat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 8px 15px rgba(0, 60, 30, 0.08);
+    border: 1px solid #d3ecd9;
+    transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(27, 140, 94, 0.15);
+    border-color: #1b8c5e;
+}
+
+/* CONTENEDOR DEL ICONO */
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #e1f5e9 0%, #c0e6d4 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1b8c5e;
+    font-size: 1.8rem;
+}
+
+/* CONTENIDO DE TEXTO */
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-content .stat-label {
+    font-size: 0.85rem;
+    color: #5b7f6e;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.stat-content .stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0d523d;
+    line-height: 1.2;
+}
+
+/* ESTRUCTURA PRINCIPAL */
+.dashboard-panel {
+    display: flex;
+    flex: 1;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: #f9fffc;
+    border-right: 2px solid #cee6db;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* PERFIL DE USUARIO */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #c4e0d3;
+}
+
+.avatar-placeholder {
+    width: 56px;
+    height: 56px;
+    background: #227555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    box-shadow: 0 6px 10px #b2dfce;
+}
+
+.user-info h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #144e3a;
+}
+
+.user-info p {
+    color: #3f735d;
+    font-size: 0.85rem;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 14px;
+    font-weight: 500;
+    color: #235542;
+    transition: 0.1s;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.nav-item.active {
+    background-color: #daf1e6;
+    color: #08654a;
+    font-weight: 600;
+    box-shadow: inset 3px 0 0 #1b8c5e;
+}
+
+.nav-item i {
+    width: 28px;
+    font-size: 1.3rem;
+    color: #398065;
+}
+
+/* SECCIÓN INFERIOR */
+.user-footer {
+    margin-top: auto;
+    border-top: 2px solid #d2ecdff5;
+    padding-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #2b6951;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    cursor: default;
+}
+
+.footer-item i {
+    width: 28px;
+    font-size: 1.2rem;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2rem 2.2rem;
+}
+
+.content-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #174b38;
+    margin-bottom: 1rem;
+}
+
+.progress-label {
+    color: #367a60;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+.course-card {
+    background: #f6fefa;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    border: 1px solid #d3ecdfff;
+    box-shadow: 0 6px 0 #bcd9cd;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0b402f;
+    margin-bottom: 0.5rem;
+}
+
+.course-desc {
+    color: #3c6d58;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.badge-light {
+    background: #c9ecd9;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+}
+
+.ver-todos-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0.5rem;
+}
+
+.ver-todos-link {
+    color: #1b8c5e;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: default;
+    font-size: 1rem;
+}
+
+hr {
+    border: 0.5px solid #c2dfd2;
+    margin: 1.8rem 0 0.5rem;
+}
+
+/* CONTROL DE PÁGINAS */
+.page {
+    display: none;
+}
+
+.page.active-page {
+    display: block;
+}
+
+/* CONTROL DE ELEMENTOS FUNCIONALES/NO FUNCIONALES */
+button {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.nav-item, .footer-item {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.continue-btn, .explore-btn, .ver-todos-link, .badge-light {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+a.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+    }
+    
+    .continue-btn, .explore-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        width: 100%;
+    }
+    
+    .dashboard-panel {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #cee6db;
+    }
+    
+    * {
+    pointer-events: auto !important;
+}
+
+}

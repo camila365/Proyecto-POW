@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e6f0ea;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LADO IZQUIERDO */
+.left {
+    width: 50%; 
+    background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center/cover; 
+    color: white;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 50px; 
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 15px; 
+}
+
+.left p {
+    font-size: 18px; 
+}  
+
+/* LADO DERECHO */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
+.card {
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    width: 355px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color:rgb(28, 113, 65);
+}
+
+.card p {
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.link a {
+    color: green;
+    text-decoration: none;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espacio entre el checkbox y el texto */
+    font-size: 14px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
