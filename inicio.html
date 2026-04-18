@@ -91,6 +91,19 @@
                     <div class="nav-item"><i class="fas fa-pencil-alt"></i> Exámenes</div>
                     <div class="nav-item"><i class="fas fa-book-open"></i> Contenido</div>
                 </div>
+                <section style="margin-top: 40px; text-align: center;">
+                      <h2>Registro de Usuarios</h2>
+                    
+                      <form id="formRegistro" style="max-width: 400px; margin: auto;">
+                        <input type="text" id="nombre" placeholder="Nombre" required style="width:100%; margin:5px; padding:10px;">
+                        <input type="email" id="correo" placeholder="Correo" required style="width:100%; margin:5px; padding:10px;">
+                        <input type="password" id="password" placeholder="Contraseña" required style="width:100%; margin:5px; padding:10px;">
+                        <button type="submit" style="margin-top:10px; padding:10px 20px;">Registrarse</button>
+                      </form>
+                    
+                      <h3 style="margin-top:30px;">Usuarios registrados</h3>
+                      <div id="listaUsuarios"></div>
+                </section>
 
                 <!-- Configuración y cerrar sesión -->
                 <div class="user-footer">
